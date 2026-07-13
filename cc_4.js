@@ -71,7 +71,7 @@ const carts = [
     { productName: "Milk", quantity: 3 }
 ];
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < carts.length; i++) 
     let cart = carts[i];
 
     let product = products.find(item => item.name === cart.productName);
@@ -125,7 +125,7 @@ for (const product of products) {
     console.log("Price: " + price);
     console.log("Inventory: " + inventory);
 
-for (const {key, value} of Object.entries(product)) {
+for (const [key, value] of Object.entries(product)) {
     console.log(key + ": " + value);
 }
 }
