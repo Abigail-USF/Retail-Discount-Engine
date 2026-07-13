@@ -1,5 +1,5 @@
 console.log("JavaScript connected!");
-// Step 2:
+
 const products = [
     {
         name: "Laptop",
@@ -33,7 +33,7 @@ const products = [
 
     }
 ];
-// Step 3:
+
 for (const product of products) {
     switch (product.category) {
         case "electronics":
@@ -53,8 +53,9 @@ for (const product of products) {
             console.log(product.name + " gets no discount");
     }
 }
-// Step 4: 
-// let customerType = "student";
+
+
+let customerType = "student";
 
 if (customerType === "student") {
     console.log("Extra discount: 5%");
@@ -63,7 +64,7 @@ if (customerType === "student") {
 } else {
     console.log("No extra discount");
 }
-// Step 5:
+
 const carts = [
     { productName: "Laptop", quantity: 1 },
     { productName: "T-Shirt", quantity: 2 },
@@ -112,11 +113,11 @@ for (let i = 0; i < 3; i++) {
     console.log("Total cost: $" + finalTotal);
     console.log("Remaining inventory for " + product.name + ": " + product.inventory);
 }
-//Step 6:
+
 for (let key in products[0]) {
     console.log(key + ": " + products[0][key]);
 }   
-//Step 7:
+
 for (const product of products) {
     const { name, category, price, inventory } = product;
     console.log("Name: " + name);
@@ -128,4 +129,4 @@ for (const {key, value} of Object.entries(product)) {
     console.log(key + ": " + value);
 }
 }
-//Project Complete
+
